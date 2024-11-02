@@ -1,0 +1,21 @@
+1. Checked Exceptions
+Estas excepciones deben ser capturadas o declaradas en el método que las puede generar. El compilador verifica (en tiempo de compilación) que estas excepciones sean manejadas adecuadamente, ya sea con un bloque try-catch o declarando la excepción en la firma del método con throws.
+
+IOException: Se lanza cuando ocurre un error de entrada/salida.
+FileNotFoundException: Específica de IOException, se lanza cuando un archivo no se encuentra.
+ClassNotFoundException: Se lanza cuando una aplicación intenta cargar una clase a través de su nombre utilizando algunos métodos, pero no se encuentra la clase especificada.
+SQLException: Se lanza para proporcionar información sobre errores en el acceso a bases de datos.
+ParseException: Se lanza cuando se encuentran errores durante el análisis de una cadena en otro formato, como fechas o números.
+2. Unchecked Exceptions
+Estas excepciones no necesitan ser declaradas en la firma del método y el compilador no requiere que sean capturadas. Estas son principalmente el resultado de errores en el programa y suelen ser evitables.
+
+NullPointerException: Se lanza cuando una aplicación intenta utilizar null en un caso donde se requiere un objeto, como la llamada a un método en una referencia nula.
+ArrayIndexOutOfBoundsException: Se lanza para indicar que se ha accedido a un array con un índice ilegal, es decir, que está fuera de sus límites.
+ArithmeticException: Se lanza cuando ocurre una condición excepcional en una operación aritmética, como la división por cero.
+IllegalArgumentException: Se lanza para indicar que un método ha sido pasado con un argumento ilegal o inapropiado.
+IllegalStateException: Esta excepción indica que el entorno o la aplicación no están en un estado apropiado para la operación solicitada.
+3. Error
+Error es una subclase de Throwable (al igual que Exception), que indica problemas graves que una aplicación normalmente no debe intentar capturar. Los errores son condiciones anormales que deberían raramente ocurrir.
+
+OutOfMemoryError: Se lanza cuando la JVM no puede asignar un objeto porque no queda suficiente memoria libre y la recolección de basura no ha podido liberar más.
+StackOverflowError: Se lanza cuando una aplicación se queda sin espacio en la pila de llamadas, generalmente debido a una recursividad muy profunda.

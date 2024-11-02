@@ -1,0 +1,34 @@
+1. List
+Una List es una colección ordenada que permite elementos duplicados. Los elementos pueden ser accedidos por su posición (índice) en la lista.
+
+ArrayList: Implementa una lista de matriz redimensionable. Es la implementación de List más utilizada. Es eficiente para operaciones de acceso y modificación por índice.
+LinkedList: Implementa una lista doblemente enlazada. Es más eficiente que ArrayList para operaciones de inserción y eliminación en cualquier posición de la lista.
+Vector: Similar a ArrayList pero es sincronizado. Es una clase más antigua y menos recomendada para uso moderno.
+Stack: Hereda de Vector y representa una pila (LIFO - Last In, First Out). Se utiliza para operaciones de apilamiento y desapilamiento.
+2. Set
+Un Set es una colección que no permite elementos duplicados. No garantiza ningún orden particular de los elementos.
+
+HashSet: Basado en una tabla hash. No garantiza el orden de los elementos. Es eficiente para operaciones de inserción, eliminación y búsqueda.
+LinkedHashSet: Similar a HashSet pero mantiene el orden de inserción de los elementos.
+TreeSet: Implementa una estructura de árbol rojo-negro. Los elementos se ordenan de acuerdo con su orden natural o por un comparador proporcionado en el momento de la creación del conjunto.
+3. Queue
+Una Queue es una colección diseñada para mantener elementos antes de procesarlos. Generalmente sigue el principio FIFO (First In, First Out).
+
+PriorityQueue: Basada en una estructura de montón (heap). Los elementos se ordenan según su orden natural o por un comparador.
+LinkedList: También implementa la interfaz Queue y puede ser utilizada como una cola.
+4. Deque
+Una Deque (Double Ended Queue) permite la inserción y eliminación de elementos desde ambos extremos de la cola.
+
+ArrayDeque: Implementa una deque basada en una matriz redimensionable. Es más eficiente que LinkedList para operaciones de inserción y eliminación en ambos extremos.
+LinkedList: También implementa la interfaz Deque.
+5. Map
+Un Map es una colección de pares clave-valor. No permite claves duplicadas y cada clave puede mapearse a un solo valor.
+
+HashMap: Basado en una tabla hash. No garantiza el orden de los pares clave-valor.
+LinkedHashMap: Similar a HashMap pero mantiene el orden de inserción de los pares clave-valor.
+TreeMap: Implementa una estructura de árbol rojo-negro. Los pares clave-valor se ordenan de acuerdo con el orden natural de las claves o por un comparador proporcionado en el momento de la creación del mapa.
+Hashtable: Similar a HashMap pero es sincronizado. Es una clase más antigua y menos recomendada para uso moderno.
+ConcurrentHashMap: Un HashMap concurrente, diseñado para permitir concurrencia con alto rendimiento.
+6. Otros
+EnumSet: Especializado para utilizarse con enumeraciones (enum). Es altamente eficiente para este propósito.
+EnumMap: Similar a EnumSet pero es un Map especializado para claves de enumeraciones (enum).
